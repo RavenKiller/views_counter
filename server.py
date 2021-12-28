@@ -1,3 +1,6 @@
+'''views_counter plugin server 
+Developed by Raven, 2021.12.28
+'''
 import tornado.ioloop
 import tornado.web
 import hashlib

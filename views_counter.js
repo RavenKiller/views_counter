@@ -1,5 +1,9 @@
-
-var ids = ["vc_page_views", "vc_site_views", "vc_users"];
+/**
+ * views_counter JS plugin
+ * Developed by Raven, 2021.12.28
+ * 
+ */
+var ids = ["vc_page_views", "vc_site_views", "vc_page_users", "vc_site_users"];
 var server_url = undefined;
 ids.forEach(id => {
     if($("#"+id).data("server-url")){

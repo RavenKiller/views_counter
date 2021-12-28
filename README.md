@@ -17,6 +17,8 @@ python server.py 2333
 导入库：
 ```html
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/RavenKiller/views_counter@main/views_counter.js"></script>
+
 
 ```
 访问量组件示例：
