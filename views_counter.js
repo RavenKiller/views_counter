@@ -1,6 +1,6 @@
 /**
  * views_counter JS plugin
- * Developed by Raven, 2021.12.28
+ * Developed by RavenKiller, 2021.12.28
  * This source code is licensed under the MIT License found in the
  * LICENSE file in the root directory of this source tree.
  */
