@@ -1,6 +1,9 @@
-'''views_counter plugin server 
-Developed by Raven, 2021.12.28
-'''
+# views_counter plugin server 
+# Developed by Raven, 2021.12.28
+# Copyright (c) RavenKiller
+# This source code is licensed under the MIT License found in the
+# LICENSE file in the root directory of this source tree.
+
 import tornado.ioloop
 import tornado.web
 import hashlib
