@@ -33,6 +33,10 @@ class MainHandler(tornado.web.RequestHandler):
         self.render("demo.html")
 
 class VCHandler(tornado.web.RequestHandler):
+    def set_default_headers(self):
+        self.set_header("Access-Control-Allow-Origin", "*")
+        self.set_header("Access-Control-Allow-Headers", "x-requested-with")
+        self.set_header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS')
     def post(self):
         res = {"success":0, "vc_page_views":0, "vc_site_views":0, "vc_page_users":0, "vc_site_users":0}
 
