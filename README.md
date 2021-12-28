@@ -4,6 +4,7 @@
 ## 使用方法
 ### 服务端
 本插件不提供公用服务，使用前需要自己开启服务端。服务端程序文件为`server.py`，使用Python3.8测试。
+
 安装依赖:
 ```shell
 pip install tornado
@@ -18,8 +19,6 @@ python server.py 2333
 ```html
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/RavenKiller/views_counter@v0.1/views_counter.min.js"></script>
-
-
 ```
 访问量组件示例：
 ```html
