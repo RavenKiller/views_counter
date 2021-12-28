@@ -9,7 +9,6 @@
     var server_url = undefined;
     ids.forEach(id => {
         if($("#"+id).data("server-url")){
-            console.log($("#"+id).data("server-url"))
             if(!server_url){
                 server_url = $("#"+id).data("server-url");
             }
@@ -32,8 +31,6 @@
     }
     function vc_acquire(){
         vc_hide();
-        console.log("??");
-        console.log(server_url)
         $.ajax({
             url: server_url,
             type: "POST",
