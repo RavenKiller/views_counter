@@ -1,8 +1,11 @@
+
 var ids = ["vc_page_views", "vc_site_views", "vc_users"];
 var server_url = undefined;
 ids.forEach(id => {
     if($("#"+id).data("server-url")){
+    if(!server_url){
         server_url = $("#"+id).data("server-url");
+    }
     }
 })
 function vc_hide(){
@@ -30,11 +33,16 @@ function vc_acquire(){
             src: window.location.href,
         },
         success: res => {
+        if(res["success"]){
             vc_text(res);
             vc_show();
+        }else{
+            console.log("Server error.")
+        }
         },
         error: (XMLHttpRequest, textStatus, errorThrown) => {
             console.log(errorThrown);
         }
     })
 }
+vc_acquire();
