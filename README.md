@@ -23,10 +23,10 @@ python server.py 2333
 访问量组件示例：
 ```html
 <!-- 请在data-server-url属性中填入自己的URL -->
-<div><span id="vc_page_views" data-server-url="your-server-url/views"></span> page views</div>
-<div><span id="vc_site_views" data-server-url="your-server-url/views"></span> site views</div>
-<div><span id="vc_page_users" data-server-url="your-server-url/views"></span> page users</div>
-<div><span id="vc_site_users" data-server-url="your-server-url/views"></span> site users</div>
+<div><span id="vc_page_views" data-server-url="http://your-server-url:2333/views"></span> page views</div>
+<div><span id="vc_site_views" data-server-url="http://your-server-url:2333/views"></span> site views</div>
+<div><span id="vc_page_users" data-server-url="http://your-server-url:2333/views"></span> page users</div>
+<div><span id="vc_site_users" data-server-url="http://your-server-url:2333/views"></span> site users</div>
 ```
 不同的ID含义：
 + `vc_page_views`: 当前页面的访问量
